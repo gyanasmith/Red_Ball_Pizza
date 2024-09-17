@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+
+      Filename:   rb_survey.html
+
+   -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Red Ball Survey</title>
+    <link href="styles/rb_reset.css" rel="stylesheet" />
+    <link href="styles/rb_styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <img src="images/rb_logo.png" alt="Red Ball Pizza" id="logoimg" />
+      <nav>
+        <a id="navicon" href="#"><img src="images/rb_navicon.png" alt=""/></a>
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">menu</a></li>
+          <li><a href="#">directions</a></li>
+          <li><a href="#">coupons</a></li>
+          <li><a href="#">orders</a></li>
+          <li><a href="#">catering</a></li>
+          <li><a href="#">reviews</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h2>Customer Survey</h2>
+      <p>
+        Thank you for taking our customer survey. Your response helps Red Ball
+        Pizza maintain the tradition that has made us the top-rated pizzeria in
+        the metro area. All participants are automatically entered into a
+        monthly drawing to receive a
+        <em>Red Ball Express PizzaFest</em> containing two large pizzas, a
+        2-liter soda, and a side order of chicken wings. Check your e-mail inbox
+        for contest results.
+      </p>
+      <p>
+        Surveys are private and confidential. Red Ball Pizza will not share your
+        contact information with third parties, <em>ever</em>.
+      </p>
+      <p>Required values are marked by an asterisk (*)</p>
+    </section>
+    
+    <form id="survey" action="#" method="POST">
+      <label for="name">Name: *</label><br>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required> <br><br>
+      
+      <label for="email">Email: *</label><br>
+      <input type="email" id="email" name="email" placeholder="Enter your email:" required><br><br>
+
+      <label for="rating">How would you rate your experience? *</label><br>
+      <select name="rating" id="rating" required>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select><br><br>
+
+      <label for="reason">Explain why: *</label><br>
+      <textarea name="reason" id="reason" cols="30" rows="3" required></textarea><br><br>
+
+      <label for="GlutenFree">Are you gluten free? *</label><br>
+      <input type="radio" id="glutenYes" name="glutenfree" value="Yes">
+      <label for="glutenYes">Yes</label><br>
+      <input type="radio" id="notGlutenFree" name = glutenfree value="No">
+      <label for="notGlutenFree">No</label><br><br>
+
+      <input type="checkbox" id="terms" name="terms">
+      <label for="terms">I agree to the Terms and Conditions</label><br><br>
+      
+      <input type="checkbox" id="subscribe" name="subscribe">
+      <label for="subscribe">Subscribe to our Newsletter to get the most recent deals!</label><br><br>
+
+      <button type="submit">Submit</button><br><br>
+
+      Thanks! Remember to check your e-mail to find out if you win! <br>
+    </form>
+<br>
+    <footer>
+      <h2>ORDER</h2>
+      <a href="#">Specials</a> <a href="#">Pizza</a> <a href="#">Pasta</a>
+      <a href="#">Wings</a> <a href="#">Sides</a> <a href="#">Salads</a>
+      <a href="#">Drinks</a> <a href="#">Desserts</a>
+      <h2>ABOUT US</h2>
+      <a href="#">Our Story</a> <a href="#">Blog</a> <a href="#">Catering</a>
+      <a href="#">School Lunch</a>
+      <h2>CUSTOMER SERVICE</h2>
+      <a href="#">Gluten Free Crust</a> <a href="#">Contact Us</a>
+      <a href="#">FAQs</a>
+      <h2>MY ACCOUNT</h2>
+      <a href="#">Create an Account</a> <a href="#">Sign In</a>
+      <a href="#">Order Status</a>
+      <h2>NUTRITION</h2>
+      <a href="#">Nutrition Information</a> <a href="#">Food Allergen</a>
+      <a href="#">Gluten Free Pizza</a>
+      <h2>POLICIES</h2>
+      <a href="#">Privacy Policy</a> <a href="#">Terms of Use</a>
+      <address>
+        Red Ball Pizza <br />
+        811 Beach Drive <br />
+        Ormond Beach, FL 32175 <br />
+        (386) 555 - 7499
+      </address>
+    </footer>
+  </body>
+</html>
